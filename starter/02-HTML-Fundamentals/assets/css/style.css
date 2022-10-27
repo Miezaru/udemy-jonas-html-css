@@ -4,46 +4,69 @@ h3,
 h4,
 p,
 li {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 h1 {
-	color: blue;
-	font-size: 26px;
-	text-transform: uppercase;
-	font-style: italic;
+  text-transform: uppercase;
+
+  color: blue;
+
+  font-size: 26px;
+  font-style: italic;
 }
 
 h2 {
-	font-size: 40px;
+  font-size: 40px;
 }
 
 h3 {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 h4 {
-	font-size: 20px;
-	text-transform: uppercase;
-	text-align: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 20px;
+}
+
+li {
+  font-size: 20px;
 }
 
 p {
-	font-size: 22px;
-	line-height: 1.5;
+  font-size: 22px;
+  line-height: 1.5;
 }
 
 /* Descendant selector */
 /* Descendant - потомок */
-footer p {
+/* footer p {
 	font-size: 16px;
-}
+} */
 
 /* Nested descendant selector */
-article header p {
+/* article header p {
 	font-style: italic;
+} */
+
+/* ID Selector */
+#author {
+  font-size: 18px;
+  font-style: italic;
 }
 
-li {
-	font-size: 20px;
+#copyright {
+  font-size: 16px;
+}
+
+/* Class Selector */
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
 }

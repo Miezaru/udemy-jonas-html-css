@@ -51,7 +51,9 @@
 					height="50"
 				/>
 
-				<p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+				<p id="author">
+					Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+				</p>
 
 				<!-- src and alt its the image attributes -->
 				<img
@@ -129,7 +131,7 @@
 		<!-- aside - secondary information of the page -->
 		<aside>
 			<h4>Related posts</h4>
-			<ul>
+			<ul class="related">
 				<li>
 					<img
 						src="./assets/images/related-1.jpg"
@@ -138,7 +140,7 @@
 						width="75"
 					/>
 					<a href="#">How to Learn Web Development</a>
-					<p>By Jonas Schmedtmann</p>
+					<p class="related-author">By Jonas Schmedtmann</p>
 				</li>
 				<li>
 					<img
@@ -148,7 +150,7 @@
 						width="75"
 					/>
 					<a href="#">The Unknown Powers of CSS</a>
-					<p>By Jim Dillon</p>
+					<p class="related-author">By Jim Dillon</p>
 				</li>
 				<li>
 					<img
@@ -158,14 +160,14 @@
 						width="75"
 					/>
 					<a href="#">The Unknown Powers of CSS</a>
-					<p>By Matilda</p>
+					<p class="related-author">By Matilda</p>
 				</li>
 			</ul>
 		</aside>
 
 		<!-- &copy; - html entities -->
 		<footer>
-			<p>Copyright &copy; 2027 by The Code Magazine.</p>
+			<p id="copyright">Copyright &copy; 2027 by The Code Magazine.</p>
 		</footer>
 	</body>
 </html>
