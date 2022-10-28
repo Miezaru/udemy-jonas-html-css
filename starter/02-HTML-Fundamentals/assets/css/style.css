@@ -86,3 +86,28 @@ aside {
 	border-bottom: 5px solid #1096ad;
 	background-color: #f7f7f7;
 }
+
+/* .first-li {
+	font-weight: bold;
+} */
+
+li:first-child {
+	font-weight: bold;
+}
+
+li:last-child {
+	font-style: italic;
+}
+
+/* li:nth-child(even) {
+	color: green;
+} */
+
+li:nth-child(odd) {
+	color: red;
+}
+
+/* always work if p FIRST child of article element */
+article p:first-child {
+	color: red;
+}
