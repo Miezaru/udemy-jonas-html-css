@@ -1,0 +1,67 @@
+body {
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+.product {
+	border: 5px solid #000000;
+}
+
+.header-secondary {
+	text-align: center;
+	text-transform: uppercase;
+
+	background-color: #f7f7f7;
+}
+
+.price {
+	font-size: 28px;
+}
+
+.free-shipping {
+	letter-spacing: 0.1px;
+	text-transform: uppercase;
+
+	color: #444444;
+
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.product-details {
+	text-transform: uppercase;
+}
+
+.more-info:link,
+.more-info:visited {
+	color: #000000;
+
+	font-weight: bold;
+}
+
+.more-info:hover,
+.more-info:active {
+	text-decoration: none;
+}
+
+.dignity-list {
+	list-style: square;
+}
+
+.add-btn {
+	text-transform: uppercase;
+
+	color: #ffffff;
+	border: none;
+	background-color: #000000;
+
+	font-size: 24px;
+}
+
+.add-btn:hover {
+	cursor: pointer;
+
+	color: #000000;
+	background-color: #ffffff;
+}
