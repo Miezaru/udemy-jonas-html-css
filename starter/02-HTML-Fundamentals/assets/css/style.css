@@ -111,3 +111,22 @@ li:nth-child(odd) {
 article p:first-child {
 	color: red;
 }
+
+/* Styling links */
+/* LVHA */
+a:link,
+a:visited {
+	color: #1098ad;
+	text-decoration: none;
+}
+
+a:hover {
+	color: aqua;
+	/* font-weight: bold; */
+	/* text-decoration: underline wavy violet; */
+}
+
+a:active {
+	color: #1096ad;
+	text-decoration: none;
+}
