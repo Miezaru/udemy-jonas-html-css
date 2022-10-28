@@ -130,3 +130,24 @@ a:active {
 	color: #1096ad;
 	text-decoration: none;
 }
+
+/* Resolving conflicts */
+/* 1 */
+/* #copyright {
+	color: red;
+} */
+
+/* 3 */
+/* .copyright {
+	color: blue;
+} */
+
+/* 2 */
+/* .text {
+	color: yellow;
+} */
+
+/* 4 */
+/* footer p {
+	color: green !important;
+} */
