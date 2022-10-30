@@ -30,6 +30,52 @@ body {
 	background-color: #f7f7f7;
 }
 
+.post {
+	margin-bottom: 60px;
+}
+
+.post-header {
+	margin-bottom: 40px;
+}
+
+.post-img {
+	width: 100%;
+	/* Need if we specified height in HTML */
+	height: auto;
+}
+
+aside {
+	width: 500px;
+	/* padding-top: 50px; */
+	/* padding-bottom: 50px; */
+	padding: 50px 0;
+
+	border-top: 5px solid #1098ad;
+	border-bottom: 5px solid #1098ad;
+	background-color: #f7f7f7;
+}
+
+/* Inheritance */
+nav {
+	font-size: 18px;
+}
+
+nav a:link {
+	/* background-color: orange;
+	margin: 20px;
+	padding: 20px;
+	display: block; */
+	display: inline-block;
+
+	margin-top: 10px;
+	margin-right: 30px;
+}
+
+nav a:link:last-child {
+	margin: 0;
+}
+
+/* SMALLER ELEMENTS */
 h1,
 h2,
 h3 {
@@ -84,36 +130,6 @@ p {
 
 	font-size: 22px;
 	line-height: 1.5;
-}
-
-.post {
-	margin-bottom: 60px;
-}
-
-.post-header {
-	margin-bottom: 40px;
-}
-
-.post-img {
-	width: 100%;
-	/* Need if we specified height in HTML */
-	height: auto;
-}
-
-aside {
-	width: 500px;
-	/* padding-top: 50px; */
-	/* padding-bottom: 50px; */
-	padding: 50px 0;
-
-	border-top: 5px solid #1098ad;
-	border-bottom: 5px solid #1098ad;
-	background-color: #f7f7f7;
-}
-
-/* Inheritance */
-nav {
-	font-size: 18px;
 }
 
 /* Descendant selector */
