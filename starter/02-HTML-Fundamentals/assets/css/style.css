@@ -13,11 +13,12 @@ body {
 }
 
 .main-header {
+	height: 80px;
+	margin-bottom: 60px;
 	/* padding: 20px; */
 	/* padding-left: 40px; */
 	/* padding-right: 40px; */
 	padding: 20px 40px;
-	margin-bottom: 60px;
 
 	background-color: #f7f7f7;
 }
@@ -36,14 +37,16 @@ h1 {
 }
 
 h2 {
-	font-size: 40px;
 	margin-bottom: 30px;
+
+	font-size: 40px;
 }
 
 h3 {
-	font-size: 30px;
-	margin-bottom: 20px;
 	margin-top: 40px;
+	margin-bottom: 20px;
+
+	font-size: 30px;
 }
 
 h4 {
@@ -55,8 +58,8 @@ h4 {
 
 ul,
 ol {
-	margin-left: 50px;
 	margin-bottom: 20px;
+	margin-left: 50px;
 }
 
 li {
@@ -70,10 +73,10 @@ li:last-child {
 }
 
 p {
+	margin-bottom: 15px;
+
 	font-size: 22px;
 	line-height: 1.5;
-
-	margin-bottom: 15px;
 }
 
 .post {
@@ -84,7 +87,14 @@ p {
 	margin-bottom: 40px;
 }
 
+.post-img {
+	width: 100%;
+	/* Need if we specified height in HTML */
+	height: auto;
+}
+
 aside {
+	width: 500px;
 	/* padding-top: 50px; */
 	/* padding-bottom: 50px; */
 	padding: 50px 0;
