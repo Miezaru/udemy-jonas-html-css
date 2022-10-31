@@ -281,6 +281,7 @@ nav {
 	float: right;
 }
 
+/* Use it on element after float elements*/
 /* .clear {
 	clear: both;
 } */
@@ -306,3 +307,5 @@ aside {
 footer {
 	clear: both;
 }
+
+/* FLEXBOX LAYOUT */
