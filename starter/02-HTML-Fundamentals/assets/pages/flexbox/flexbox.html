@@ -43,12 +43,30 @@
 				display: flex;
 				/* Vertical align */
 				/* stretch - default */
-				/* flex-start, flex-end, center */
+				/* flex-start, flex-end, center, baseline */
 				align-items: center;
 				/* Horizontal align */
 				/* flex-start, flex-end, center */
 				/* space-between, space-around, space-evenly */
-				justify-content: flex-end;
+				justify-content: flex-start;
+				/* Using gap instead of margin. Use this property and no need to give last element margin-right: 0; */
+				gap: 30px;
+			}
+
+			.el--1 {
+				/* Overwrite align-items */
+				align-self: flex-start;
+				/* order: 2; */
+			}
+
+			.el--5 {
+				align-self: stretch;
+				order: 1;
+			}
+
+			.el--6 {
+				/* Default order value 0 */
+				order: -1;
 			}
 		</style>
 	</head>
