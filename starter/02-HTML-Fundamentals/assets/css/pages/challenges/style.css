@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -10,8 +11,14 @@ body {
 }
 
 .container {
-	width: 925px;
+	width: 908px;
 	margin: 25px auto;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
 .product {
@@ -49,12 +56,27 @@ body {
 	background-color: #f7f7f7;
 }
 
+.post-img {
+	float: left;
+	width: 300px;
+	height: auto;
+}
+
+.more-info-box {
+	width: 300px;
+	float: left;
+	padding: 25px;
+	height: 300px;
+}
+
 .price {
 	font-size: 24px;
+	display: inline-block;
+	margin-bottom: 20px;
 }
 
 .free-shipping {
-	margin-bottom: 15px;
+	margin: 5px 0;
 
 	letter-spacing: 0.1px;
 	text-transform: uppercase;
@@ -63,16 +85,25 @@ body {
 
 	font-size: 16px;
 	font-weight: bold;
+
+	float: right;
 }
 
 .product-description {
 	margin-bottom: 15px;
+	clear: both;
+}
+
+.details-box {
+	width: 300px;
+	height: 300px;
+	float: left;
+	padding: 25px;
 }
 
 .product-details {
-	margin-bottom: 10px;
-
 	text-transform: uppercase;
+	margin-bottom: 25px;
 }
 
 .more-info:link,
@@ -102,7 +133,15 @@ body {
 
 	width: 25px;
 	height: 25px;
-	margin-right: 5px;
+	margin-right: 10px;
+}
+
+.color:first-child {
+	margin-left: 10px;
+}
+
+.color:last-child {
+	margin-right: 0;
 }
 
 .color:nth-child(1) {
@@ -137,7 +176,7 @@ body {
 }
 
 .dignity-list--item {
-	margin-bottom: 5px;
+	margin-bottom: 8px;
 }
 
 .dignity-list--item:last-child {
