@@ -3,6 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -46,10 +47,7 @@ body {
 }
 
 aside {
-	width: 500px;
-	/* padding-top: 50px; */
-	/* padding-bottom: 50px; */
-	padding: 50px 0;
+	padding: 50px 40px;
 	border-top: 5px solid #1098ad;
 	border-bottom: 5px solid #1098ad;
 	background-color: #f7f7f7;
@@ -141,6 +139,7 @@ h4 {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 20px;
+	margin-bottom: 30px;
 }
 
 ul,
@@ -193,6 +192,7 @@ p {
 
 .related {
 	list-style: none;
+	margin-left: 0;
 }
 
 /* .first-li {
