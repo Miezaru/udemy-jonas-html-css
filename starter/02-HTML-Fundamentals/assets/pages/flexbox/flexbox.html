@@ -39,6 +39,8 @@
 				font-size: 40px;
 				margin: 40px;
 
+				/* About Flex property (grow, shrink, basis) */
+				/* https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/learn/lecture/27512250#overview */
 				/* FLEXBOX */
 				display: flex;
 				/* Vertical align */
@@ -53,10 +55,24 @@
 				gap: 30px;
 			}
 
+			.el {
+				/* DEFAULTS:
+				flex-grow: 0;
+				flex-shrink: 1;
+				flex-basis: auto;
+        flex: 0 1 auto; */
+
+				/* flex-basis: 200px; */
+				/* flex-shrink: 0; */
+				/* flex-grow: 1; */
+				flex: 1; /* Means flex-grow: 1*/
+			}
+
 			.el--1 {
 				/* Overwrite align-items */
 				align-self: flex-start;
 				/* order: 2; */
+				flex-grow: 2;
 			}
 
 			.el--5 {
