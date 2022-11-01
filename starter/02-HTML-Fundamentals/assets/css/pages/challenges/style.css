@@ -104,7 +104,7 @@ body {
 }
 
 .product-description {
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	/* clear: both; */
 }
 
@@ -124,7 +124,7 @@ body {
 .more-info:visited {
 	display: inline-block;
 
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 
 	color: #000000;
 
@@ -153,14 +153,14 @@ body {
 	height: 25px;
 	/* margin-right: 10px; */
 }
-
+/*
 .color:first-child {
-	/* margin-left: 10px; */
-}
+	margin-left: 10px;
+} */
 
-.color:last-child {
-	/* margin-right: 0; */
-}
+/* .color:last-child {
+	margin-right: 0;
+} */
 
 .color:nth-child(1) {
 	background-color: #000000;
