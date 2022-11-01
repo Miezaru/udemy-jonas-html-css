@@ -66,14 +66,14 @@ body {
 	/* float: left; */
 	/* width: 300px; */
 	height: 300px;
-	flex: 1;
+	/* flex: 1; */
 }
 
 .more-info-box {
 	/* width: 300px; */
 	/* float: left; */
 	margin-top: 20px;
-	flex: 1;
+	/* flex: 1; */
 }
 
 .price-box {
@@ -111,7 +111,7 @@ body {
 .details-box {
 	/* width: 300px; */
 	/* float: left; */
-	flex: 1;
+	/* flex: 1; */
 	margin-top: 20px;
 }
 
@@ -124,7 +124,7 @@ body {
 .more-info:visited {
 	display: inline-block;
 
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 
 	color: #000000;
 
@@ -220,4 +220,22 @@ body {
 
 	color: #000000;
 	background-color: #ffffff;
+}
+
+/* GRID */
+
+.product {
+	width: 900px;
+	display: grid;
+	grid-template-columns: 300px repeat(2, 1fr);
+	margin: 0 auto;
+	column-gap: 40px;
+}
+
+.header-secondary {
+	grid-column: 1 / -1;
+}
+
+.add-btn {
+	grid-column: 1 / -1;
 }

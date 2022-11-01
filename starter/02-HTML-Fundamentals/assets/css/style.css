@@ -364,22 +364,46 @@ nav a:link {
 	font-style: italic;
 }
 
-.row {
+/* .row {
 	display: flex;
 	align-items: flex-start;
 
 	gap: 75px;
+} */
+
+/* .post {
+	flex: 0 0 825px;
+	margin-bottom: 0;
+} */
+
+/* aside {
+	flex: 0 0 300px;
+} */
+
+/* CSS GRID LAYOUT */
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 300px;
+	column-gap: 75px;
+	row-gap: 60px;
+	align-items: start;
 }
 
-.post {
-	flex: 0 0 825px;
+.main-header {
+	grid-column: 1 / -1;
+
+	margin-bottom: 0;
+}
+
+article {
 	margin-bottom: 0;
 }
 
 aside {
-	/* DEFAULTS
-flex-grow: 0;
-flex-shrink: 1;
-flex-basis: auto; */
-	flex: 0 0 300px;
+	/* align-self: start; */
+}
+
+footer {
+	grid-column: 1 / -1;
 }
