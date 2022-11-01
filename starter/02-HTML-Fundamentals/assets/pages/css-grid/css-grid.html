@@ -41,6 +41,7 @@
 
 				/* CSS GRID */
 				display: grid;
+				display: none;
 				/* height: 500px; */
 				/* grid-template-columns: 3fr 1fr 1fr auto; */
 				grid-template-columns: repeat(4, 1fr);
@@ -73,8 +74,6 @@
 			}
 
 			.container--2 {
-				display: none;
-
 				/* STARTER */
 				font-family: sans-serif;
 				background-color: black;
@@ -85,6 +84,27 @@
 				height: 600px;
 
 				/* CSS GRID */
+				display: grid;
+				grid-template-columns: 125px 200px 125px;
+				grid-template-rows: 250px 100px;
+				gap: 25px;
+
+				/* Aligning tracks inside container: distribute empty space */
+				justify-content: center;
+				/* justify-content: space-between; */
+
+				align-content: center;
+				/* align-content: space-between; */
+
+				/* Aligning items inside cells: moving items around inside cells */
+				align-items: center;
+
+				justify-items: center;
+			}
+
+			.el--3 {
+				align-self: end;
+				justify-self: end;
 			}
 		</style>
 	</head>
