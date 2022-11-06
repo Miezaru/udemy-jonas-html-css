@@ -51,7 +51,7 @@ body {
 }
 
 main {
-	width: 800px;
+	/* width: 800px; */
 	font-size: 18px;
 	margin-top: 200px;
 	position: absolute;
@@ -95,7 +95,6 @@ main {
 
 .page:link,
 .page:visited {
-	display: inline-block;
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
@@ -114,8 +113,8 @@ main {
 	color: #ffffff;
 }
 
-.page--open:link,
-.page--open:visited {
+/* AND selector w/o space between selectors */
+.page.page--open {
 	background-color: #087f5b;
 	color: #ffffff;
 }
