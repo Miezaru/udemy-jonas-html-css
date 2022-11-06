@@ -24,15 +24,3 @@ body {
 	color: #343a40;
 	line-height: 1;
 }
-
-a:link,
-a:visited {
-	text-decoration: none;
-	font-weight: 700;
-	color: #343a40;
-}
-
-a:active,
-a:hover {
-	color: #087f5b;
-}

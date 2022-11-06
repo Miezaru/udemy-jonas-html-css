@@ -18,6 +18,12 @@ TINTS AND SHADES:
 
 */
 
+/* 2 ways to select 1 of 3 accordion items */
+/* 1st: add every changing element class */
+/* 1st: hidden-box--open {display: block} */
+/* 2nd: add to the parent element class and then use descendant selector */
+/* 2nd: .open .hidden-box {display: block} */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -36,25 +42,57 @@ body {
 .accordion {
 	width: 700px;
 	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
 }
 
 .item {
+	box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+	padding: 24px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	column-gap: 24px;
+	row-gap: 32px;
+	align-items: center;
+}
+
+.item--open {
+	border-top: 4px solid #087f5b;
 }
 
 .number,
 .text {
 	font-size: 24px;
 	font-weight: 500;
-	color: #087f5b;
 }
 
 .text {
+	color: #343a40;
 }
 
+.number {
+	color: #ced4da;
+}
+
+.text--open,
+.number--open {
+	color: #087f5b;
+}
 .icon {
 	width: 24px;
 	height: 24px;
+	cursor: pointer;
+	stroke: #343a40;
+}
+
+.icon--open {
 	stroke: #087f5b;
+}
+
+.hidden-box {
+	grid-column: 2;
+	display: none;
 }
 
 .hidden-box p {
@@ -69,6 +107,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
+}
+
+.hidden-box--open {
+	display: block;
 }
 /*
 .hidden-box li {
