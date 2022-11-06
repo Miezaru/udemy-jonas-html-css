@@ -47,3 +47,44 @@ body {
 .nav--link:hover {
 	color: #087f5b;
 }
+
+main {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+/* Look evernote tip how to collapse borders */
+table {
+	width: 800px;
+	font-size: 18px;
+	/* margin: 100px auto; */
+	/* border: 1px solid #343a40; */
+	/* Collapsing borders! */
+	border-collapse: collapse;
+}
+
+td,
+th {
+	/* border: 1px solid #343a40; */
+	padding: 16px 24px;
+	text-align: left;
+}
+
+/* descendant selector */
+thead th {
+	color: #ffffff;
+	background-color: #087f5b;
+	width: 25%;
+}
+
+/* Zebra Stripes */
+/* Нечетные */
+tbody tr:nth-child(odd) {
+	background-color: #f8f9fa;
+}
+
+/* Четные */
+tbody tr:nth-child(even) {
+	background-color: #e9ecef;
+}
