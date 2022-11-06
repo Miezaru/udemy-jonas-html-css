@@ -24,3 +24,132 @@ body {
 	color: #343a40;
 	line-height: 1;
 }
+
+.nav {
+	margin-top: 32px;
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+}
+
+.nav--link:link,
+.nav--link:visited {
+	text-decoration: none;
+	font-weight: 700;
+	display: inline-block;
+	padding: 12px 24px;
+	background-color: #343a40;
+	color: #ffffff;
+	border-radius: 8px;
+}
+
+.nav--link:active,
+.nav--link:hover {
+	color: #087f5b;
+}
+
+img {
+	height: 200px;
+	border-radius: 8px;
+	transform: scale(1.5);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.carousel {
+	width: 800px;
+	margin: 100px auto;
+	background-color: #087f5b;
+	padding: 32px 48px 32px 86px;
+	/* padding-left: 86px; */
+	/* padding-right: 48px; */
+
+	border-radius: 8px;
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	gap: 86px;
+}
+
+.textimonial {
+}
+
+.textimonial-text {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 1.5;
+	margin-bottom: 32px;
+	color: #e6fcf5;
+}
+
+.textimonial-author {
+	font-size: 14px;
+	margin-bottom: 4px;
+	color: #c3fae8;
+}
+
+.testimonial-job {
+	font-size: 12px;
+	color: #c3fae8;
+}
+
+.btn {
+	width: 40px;
+	height: 40px;
+	border: none;
+	background-color: #ffffff;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+	cursor: pointer;
+
+	/* Vertical centering with position absolute and tranform property */
+	position: absolute;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-icon {
+	width: 24px;
+	height: 24px;
+	stroke: #087f5b;
+}
+
+.btn--right {
+	/* In relation to PARENT ELEMENT */
+	right: 0;
+	top: 50%;
+
+	/* In relation to ELEMENT ITSELF */
+	transform: translate(50%, -50%);
+}
+
+.btn--left {
+	left: 0;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.dots {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 32px);
+
+	display: flex;
+	gap: 12px;
+}
+
+.dot {
+	height: 12px;
+	width: 12px;
+	background-color: #ffffff;
+	border: 2px solid #087f5b;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.dot--fill {
+	background-color: #087f5b;
+}
