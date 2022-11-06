@@ -55,8 +55,18 @@ body {
 
 header {
 	margin-top: 16px;
-	background-color: azure;
+	color: #ffffff;
 	height: calc(100vh - 88px);
+
+	position: relative;
+
+	background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgb(34, 34, 34, 0.6)),
+		url(../../img/hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	/* Gradient */
+	/* background-image: linear-gradient(to right, red, blue); */
 }
 
 nav {
@@ -65,12 +75,30 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: green;
+	padding-top: 32px;
+}
+
+.header-container {
+	width: 1200px;
+	position: absolute;
+	/* In relation to PARENT size */
+	left: 50%;
+	top: 50%;
+
+	/* In relation to ELEMENT size */
+	transform: translate(-50%, -50%);
+
+	/* text-align: center; */
+}
+
+.header-container-inner {
+	width: 50%;
 }
 
 h1 {
 	font-size: 52px;
 	margin-bottom: 32px;
+	line-height: 1.05;
 }
 
 p {
@@ -98,5 +126,4 @@ h2 {
 
 section {
 	padding: 96px 0;
-	background-color: #f7f7f7;
 }
