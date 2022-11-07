@@ -71,10 +71,10 @@ img {
 	gap: 86px;
 }
 
-.textimonial {
-}
+/* .testimonial {
+} */
 
-.textimonial-text {
+.testimonial-text {
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 1.5;
@@ -82,7 +82,7 @@ img {
 	color: #e6fcf5;
 }
 
-.textimonial-author {
+.testimonial-author {
 	font-size: 14px;
 	margin-bottom: 4px;
 	color: #c3fae8;
