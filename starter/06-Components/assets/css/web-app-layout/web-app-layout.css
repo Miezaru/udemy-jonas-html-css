@@ -47,3 +47,87 @@ body {
 .nav--link:hover {
 	color: #087f5b;
 }
+
+.web-app {
+	margin-top: 16px;
+	font-size: 24px;
+	height: calc(100vh - 88px);
+	text-align: center;
+	font-weight: 700;
+
+	display: grid;
+	grid-template-columns: 80px 400px 1fr 250px;
+	grid-template-rows: 80px 1fr;
+}
+
+nav,
+section,
+aside,
+main {
+	padding-top: 24px;
+}
+
+nav,
+menu,
+button {
+	color: #ffffff;
+}
+
+nav {
+	background-color: #343a40;
+	grid-row: 1 / -1;
+}
+
+menu {
+	background-color: #7048e8;
+	grid-column: 2 / -1;
+
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 0 40px;
+}
+
+button {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	border: none;
+	cursor: pointer;
+	background-color: #5f3dc4;
+	padding: 8px 12px;
+	text-align: left;
+}
+
+button:last-child {
+	/* Nice trick with margin auto to the last element, to put it in the end of track */
+	margin-left: auto;
+	background-color: #d6336c;
+}
+
+section {
+	background-color: #e9ecef;
+	padding: 40px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	/* How elements that don`t fit into container appear */
+	/* overflow: hidden; */
+	overflow: scroll;
+}
+
+.email {
+	background-color: #adb5bd;
+	height: 96px;
+	flex-shrink: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+aside {
+	background-color: #e9ecef;
+}
