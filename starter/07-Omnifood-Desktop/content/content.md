@@ -25,7 +25,7 @@ Pause anytime: Going on vacation? Just pause your subscription, and we refund un
 
 ### How Omnifood works
 
-[Show big app images]
+[Show b`ig app images]
 
 **Your daily dose of health in 3 simple steps**
 

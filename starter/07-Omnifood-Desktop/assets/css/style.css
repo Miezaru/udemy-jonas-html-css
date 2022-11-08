@@ -16,9 +16,9 @@ Default: 1
 Primary: #e67e22
 
 - Tints:
-
+#fdf2e9
 - Shades:
-
+#cf711f
 - Accents
 
 - Greys
@@ -40,8 +40,30 @@ SPACING SYSTEM (px)
 
 */
 
+/* ----------VARIABLES */
+
 :root {
+	/* White */
+	--white-color: #ffffff;
+	/* Main color */
+	--main-color: #e67e22;
+	/* Tints */
+	--tint-main-color: #fdf2e9;
+	/* Shades */
+	--shade-main-color: #cf711f;
+	/* Grey */
 	--main-grey: #555555;
+	--heading-grey: #333333;
+}
+
+/* ----------HELPERS */
+
+.margin-right-sm {
+	margin-right: 1.6rem !important;
+}
+
+html {
+	font-size: 62.5%;
 }
 
 * {
@@ -55,4 +77,88 @@ body {
 	line-height: 1;
 	font-weight: 400;
 	color: var(--main-grey);
+}
+
+/* ----------HEADING */
+
+.heading-primary {
+	font-size: 5.2rem;
+	font-weight: 700;
+	line-height: 1.05;
+	letter-spacing: -0.5px;
+	color: var(--heading-grey);
+
+	margin-bottom: 3.2rem;
+}
+
+/* ----------LINK BUTTONS */
+
+.btn:link,
+.btn:visited {
+	display: inline-block;
+
+	text-decoration: none;
+	font-size: 2rem;
+	padding: 1.6rem 3.2rem;
+	border-radius: 0.9rem;
+
+	/* New property for animations */
+	/* transition: background-color 1s; */
+	/* transition: all 1s; */
+	/* Put transition on original "state" */
+	transition: background-color 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+	background-color: var(--main-color);
+	color: var(--white-color);
+}
+
+.btn--full:active,
+.btn--full:hover {
+	background-color: var(--shade-main-color);
+	color: var(--white-color);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+	background-color: var(--white-color);
+	color: var(--main-grey);
+}
+
+.btn--outline:active,
+.btn--outline:hover {
+	background-color: var(--tint-main-color);
+	color: var(--main-grey);
+
+	/* Trick to add border inside */
+	/* border: 3px solid var(--white-color); */
+	box-shadow: inset 0 0 0 3px var(--white-color);
+}
+
+/* ------------SECTION HERO */
+
+.section-hero {
+	background-color: var(--tint-main-color);
+	padding: 9.6rem 0;
+}
+
+.hero {
+	max-width: 130rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 9.6rem;
+}
+
+.hero-description {
+	font-size: 2rem;
+	line-height: 1.6;
+	margin-bottom: 4.8rem;
+}
+
+.hero-img {
+	width: 100%;
 }
