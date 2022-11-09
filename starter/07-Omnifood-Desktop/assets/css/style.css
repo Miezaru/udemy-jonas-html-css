@@ -7,22 +7,22 @@ FONT SIZE SYSTEM (px)
 
 - Font weights:
 Default: 400
+500
+600
+Bold: 700
 
 - Line heights:
 Default: 1
+Small: 1.05
+Pharagraph default: 1.6
 
 ---02 COLORS
 
 Primary: #e67e22
-
-- Tints:
-#fdf2e9
-- Shades:
-#cf711f
-- Accents
-
-- Greys
-Main grey: #555555
+- Tints: #fdf2e9
+- Shades:#cf711f
+- Accents:
+- Greys: #555555
 
 ---03 IMAGES
 https://unsplash.com/s/photos/food - Food images
@@ -31,9 +31,9 @@ https://www.uifaces.co/browse-avatars/ - Customers photo
 ---04 SHADOWS
 
 ---05 BORDER-RADIUS
+Default: 9px
 
 ---07 WHITESPACE
-
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
@@ -55,7 +55,7 @@ SPACING SYSTEM (px)
 	--shades-main-color: #cf711f;
 	/* Grey */
 	--main-grey: #555555;
-	--heading-grey: #333333;
+	--dark-grey: #333333;
 }
 
 /* ****************************** */
@@ -94,7 +94,7 @@ body {
 	font-weight: 700;
 	line-height: 1.05;
 	letter-spacing: -0.5px;
-	color: var(--heading-grey);
+	color: var(--dark-grey);
 
 	margin-bottom: 3.2rem;
 }
@@ -111,7 +111,7 @@ body {
 	font-size: 2rem;
 	font-weight: 600;
 	padding: 1.6rem 3.2rem;
-	border-radius: 0.9rem;
+	border-radius: 9px;
 
 	/* New property for animations */
 	/* transition: background-color 1s; */
@@ -129,7 +129,6 @@ body {
 .btn--full:active,
 .btn--full:hover {
 	background-color: var(--shades-main-color);
-	color: var(--white-color);
 }
 
 .btn--outline:link,
@@ -149,7 +148,7 @@ body {
 }
 
 /* ****************************** */
-/* ----------HEADER */
+/* ----------HEADER & LOGO */
 /* ****************************** */
 
 .header {
@@ -167,7 +166,44 @@ body {
 	height: 2.2rem;
 }
 
-.main-nav {
+/* ****************************** */
+/* ----------NAVIGATION */
+/* ****************************** */
+
+.main-nav-list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+	display: inline-block;
+	text-decoration: none;
+	color: var(--dark-grey);
+	font-weight: 500;
+	font-size: 1.8rem;
+
+	transition: all 0.3s;
+}
+
+.main-nav-link:active,
+.main-nav-link:hover {
+	color: var(--main-color);
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+	background-color: var(--main-color);
+	color: var(--white-color);
+	padding: 1.2rem 2.4rem;
+	border-radius: 9px;
+}
+
+.main-nav-link.nav-cta:active,
+.main-nav-link.nav-cta:hover {
+	background-color: var(--shades-main-color);
 }
 
 /* ****************************** */
