@@ -1,5 +1,6 @@
 gulpfile.js
 .eslintrc.js
+.browserslistrc
 csscomb.json
 node_modules
 yarn.lock

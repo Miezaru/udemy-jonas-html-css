@@ -50,7 +50,7 @@ SPACING SYSTEM (px)
 	/* Tints */
 	--tint-main-color: #fdf2e9;
 	/* Shades */
-	--shade-main-color: #cf711f;
+	--shades-main-color: #cf711f;
 	/* Grey */
 	--main-grey: #555555;
 	--heading-grey: #333333;
@@ -61,6 +61,8 @@ SPACING SYSTEM (px)
 .margin-right-sm {
 	margin-right: 1.6rem !important;
 }
+
+/* ----------DEFAULT ELEMENTS */
 
 html {
 	font-size: 62.5%;
@@ -73,7 +75,7 @@ html {
 }
 
 body {
-	font-family: sans-serif;
+	font-family: 'Rubik', sans-serif;
 	line-height: 1;
 	font-weight: 400;
 	color: var(--main-grey);
@@ -99,6 +101,7 @@ body {
 
 	text-decoration: none;
 	font-size: 2rem;
+	font-weight: 600;
 	padding: 1.6rem 3.2rem;
 	border-radius: 0.9rem;
 
@@ -117,7 +120,7 @@ body {
 
 .btn--full:active,
 .btn--full:hover {
-	background-color: var(--shade-main-color);
+	background-color: var(--shades-main-color);
 	color: var(--white-color);
 }
 
@@ -157,6 +160,38 @@ body {
 	font-size: 2rem;
 	line-height: 1.6;
 	margin-bottom: 4.8rem;
+}
+
+.delivered-meals {
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+	margin-top: 8rem;
+}
+
+.delivered-imgs {
+	display: flex;
+}
+
+.delivered-imgs img {
+	width: 4.8rem;
+	height: 4.8rem;
+	border-radius: 50%;
+	border: 3px solid var(--tint-main-color);
+	margin-right: -1.6rem;
+}
+
+.delivered-imgs img:last-child {
+	margin-right: 0;
+}
+
+.delivered-text {
+	font-size: 1.8rem;
+}
+
+.delivered-text span {
+	color: var(--shades-main-color);
+	font-weight: 700;
 }
 
 .hero-img {
