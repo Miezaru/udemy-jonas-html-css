@@ -218,8 +218,49 @@
 	padding: 9.6rem 0;
 }
 
+.meal {
+	box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+	border-radius: 11px;
+	/* Use it instead of use border-radius on images */
+	overflow: hidden;
+}
+
+.meal-content {
+	padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
 .meal-img {
 	width: 100%;
+}
+
+.meal-tags {
+	display: flex;
+	gap: 0.4rem;
+	align-items: center;
+
+	margin-bottom: 1.2rem;
+}
+
+.tag {
+	display: inline-block;
+	padding: 0.4rem 0.8rem;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	color: var(--dark-grey);
+	border-radius: 100px;
+	font-weight: 600;
+}
+
+.tag--vegetarian {
+	background-color: var(--vegetarian-color);
+}
+
+.tag--vegan {
+	background-color: var(--vegan-color);
+}
+
+.tag--paleo {
+	background-color: var(--paleo-color);
 }
 
 .meal-title {
@@ -240,5 +281,12 @@
 	font-size: 1.6rem;
 	display: flex;
 	align-items: center;
-	gap: 1.2rem;
+	gap: 1.6rem;
+}
+
+.meal-icon {
+	height: 2.4rem;
+	width: 2.4rem;
+	color: var(--main-color);
+	/* font-size: 2.4rem; */
 }
