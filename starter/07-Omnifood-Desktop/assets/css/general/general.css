@@ -54,6 +54,9 @@ Medium: 11px
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
+---08 Animations time
+0.3s short
+0.4s lomg
 
 */
 
@@ -77,7 +80,7 @@ SPACING SYSTEM (px)
 	--paleo-color: #ffd43b;
 	/* Grey */
 	--main-light-grey: #999999;
-	--main-md-light-grey: #777777;
+	--main-md-light-grey: #6f6f6f; /*lightest grey allowed on #fdf2e9 background color*/
 	--main-grey: #555555;
 	--dark-grey: #333333;
 	--light-grey: #dddddd;
