@@ -223,6 +223,12 @@
 	border-radius: 11px;
 	/* Use it instead of use border-radius on images */
 	overflow: hidden;
+	transition: all 0.4s;
+}
+
+.meal:hover {
+	box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+	transform: translateY(-1.2rem);
 }
 
 .meal-content {
@@ -289,4 +295,35 @@
 	width: 2.4rem;
 	color: var(--main-color);
 	/* font-size: 2.4rem; */
+}
+
+/* ----------List Of Diets */
+
+.list {
+	list-style: none;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
+.list-item {
+	font-size: 1.8rem;
+
+	display: flex;
+	align-items: center;
+	gap: 1.6rem;
+}
+
+.list-icon {
+	width: 3rem;
+	height: 3rem;
+	color: var(--main-color);
+}
+
+/* ----------See all recipes button */
+
+.all-recipes {
+	text-align: center;
+	font-size: 1.8rem;
 }
