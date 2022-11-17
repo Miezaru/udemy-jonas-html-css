@@ -46,6 +46,12 @@ https://www.uifaces.co/browse-avatars/ - Customers photo
 
 ---04 SHADOWS
 
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+
 ---05 BORDER-RADIUS
 Default: 9px
 Medium: 11px
@@ -69,11 +75,16 @@ SPACING SYSTEM (px)
 	--white-color: #ffffff;
 	/* Main color */
 	--main-color: #e67e22;
+	--main-color-trans: rgba(230, 126, 34, 0.35);
 	/* Tints */
 	--tint-main-color: #fdf2e9;
+	--tint-main-color-trans: rgba(253, 242, 233, 0.5);
 	--d-tint-main-color: #fae5d3;
+	--gradient-tint: #e98b38;
+	--gradient-tint-trans: rgba(233, 139, 56, 0.35);
 	/* Shades */
 	--shades-main-color: #cf711f;
+	--cta-heading-color: #45260a;
 	/* Accent */
 	--vegetarian-color: #51cf66;
 	--vegan-color: #94d82d;
@@ -84,6 +95,7 @@ SPACING SYSTEM (px)
 	--main-grey: #555555;
 	--dark-grey: #333333;
 	--light-grey: #dddddd;
+	--form-light-grey: #aaaaaa;
 }
 
 /* ****************************** */
@@ -92,6 +104,10 @@ SPACING SYSTEM (px)
 
 .margin-right-sm {
 	margin-right: 1.6rem !important;
+}
+
+.margin-bottom-smd {
+	margin-bottom: 3.2rem !important;
 }
 
 .margin-bottom-md {
@@ -118,6 +134,16 @@ html {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+
+	/* always square - thats a problem for rounded elements */
+	/* outline: 4px dotted var(--main-color); */
+	/* outline-offset: 8px; */
+
+	box-shadow: 0 0 0 0.8rem var(--main-color-trans);
 }
 
 body {
@@ -237,7 +263,7 @@ strong {
 /* ****************************** */
 /* ----------LINK BUTTONS */
 /* ****************************** */
-
+.btn,
 .btn:link,
 .btn:visited {
 	display: inline-block;
@@ -253,6 +279,11 @@ strong {
 	/* transition: all 1s; */
 	/* Put transition on original "state" */
 	transition: all 0.3s;
+
+	/* Only nessecary for btn itself */
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
 }
 
 .btn--full:link,
@@ -280,6 +311,18 @@ strong {
 	/* Trick to add border inside */
 	/* border: 3px solid var(--white-color); */
 	box-shadow: inset 0 0 0 3px var(--white-color);
+}
+
+.btn--form {
+	background-color: var(--cta-heading-color);
+	color: var(--tint-main-color);
+	align-self: end;
+	padding: 1.2rem;
+}
+
+.btn--form:hover {
+	background-color: var(--white-color);
+	color: var(--main-grey);
 }
 
 .link:link,
