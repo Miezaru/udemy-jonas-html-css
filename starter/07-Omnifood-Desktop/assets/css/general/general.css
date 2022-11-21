@@ -90,10 +90,12 @@ SPACING SYSTEM (px)
 	--vegan-color: #94d82d;
 	--paleo-color: #ffd43b;
 	/* Grey */
-	--main-light-grey: #999999;
+	--main-light-grey: #888888;
+	--main-light-grey-l: #767676; /*lightest grey allowed on #fff*/
 	--main-md-light-grey: #6f6f6f; /*lightest grey allowed on #fdf2e9 background color*/
 	--main-grey: #555555;
 	--dark-grey: #333333;
+	--lightest-grey: #eeeeee;
 	--light-grey: #dddddd;
 	--form-light-grey: #aaaaaa;
 }
@@ -182,10 +184,6 @@ strong {
 
 .grid--4-cols {
 	grid-template-columns: repeat(4, 1fr);
-}
-
-.grid--5-cols {
-	grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
