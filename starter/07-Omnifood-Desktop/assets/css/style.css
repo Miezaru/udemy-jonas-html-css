@@ -570,3 +570,16 @@
 	background-size: cover;
 	background-position: center;
 }
+
+/* ****************************** */
+/* ----------FOOTER SECTION */
+/* ****************************** */
+
+.footer {
+	padding: 9.6rem 0;
+}
+
+.footer-logo {
+	height: 2.2rem;
+	display: inline-block;
+}
