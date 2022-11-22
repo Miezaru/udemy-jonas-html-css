@@ -71,7 +71,7 @@ Instead, 1rem = 1em = 16px
 }
 
 /* ****************************** */
-/* ----------BELOW 944px (Smaller desktops) 944/16 = 59*/
+/* ----------BELOW 944px (Tablets) 944/16 = 59*/
 /* ****************************** */
 
 @media (max-width: 59em) {
@@ -197,6 +197,53 @@ Instead, 1rem = 1em = 16px
 	.main-nav-link:link,
 	.main-nav-link:visited {
 		font-size: 3rem;
+	}
+}
+
+/* ****************************** */
+/* ----------BELOW 704px (Smaller tablets) 704/16 = 44*/
+/* ****************************** */
+
+@media (max-width: 44em) {
+	.grid--3-cols,
+	.grid--4-cols {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.diets {
+		grid-column: 1/ -1;
+		justify-self: center;
+	}
+
+	.list {
+		margin-left: 3.2rem;
+	}
+
+	.pricing-plan {
+		width: 100%;
+	}
+
+	.pricing-plan--starter {
+		justify-self: start;
+	}
+
+	.heading-secondary {
+		margin-bottom: 4.8rem !important;
+	}
+
+	.grid--footer {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.nav-col {
+		grid-column: span 2;
+		grid-row: 1;
+		margin-bottom: 3.2rem;
+	}
+
+	.logo-col,
+	.address-col {
+		grid-column: span 3;
 	}
 }
 
