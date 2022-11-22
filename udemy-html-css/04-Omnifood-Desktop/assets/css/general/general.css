@@ -133,6 +133,9 @@ SPACING SYSTEM (px)
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
+
+	/* Does NOT work on Safari, we using js to fix it */
+	scroll-behavior: smooth;
 }
 
 * {
