@@ -65,6 +65,7 @@
 	border: none;
 	background: none;
 	cursor: pointer;
+	z-index: 9999;
 
 	display: none;
 }
