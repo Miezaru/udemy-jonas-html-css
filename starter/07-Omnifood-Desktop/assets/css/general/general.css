@@ -74,6 +74,7 @@ SPACING SYSTEM (px)
 :root {
 	/* White */
 	--white-color: #ffffff;
+	--white-color-trans-mobile-nav: rgba(255, 255, 255, 0.97);
 	/* Main color */
 	--main-color: #e67e22;
 	--main-color-trans: rgba(230, 126, 34, 0.35);
@@ -131,6 +132,7 @@ SPACING SYSTEM (px)
 
 html {
 	font-size: 62.5%;
+	overflow-x: hidden;
 }
 
 * {
@@ -154,6 +156,9 @@ body {
 	line-height: 1;
 	font-weight: 400;
 	color: var(--main-grey);
+
+	/* Only works if there is nothing absolutely poisitioned in relation to body */
+	overflow-x: hidden;
 }
 
 strong {
