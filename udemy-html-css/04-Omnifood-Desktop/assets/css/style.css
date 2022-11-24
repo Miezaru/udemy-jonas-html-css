@@ -140,7 +140,7 @@
 	margin-right: -1.6rem;
 }
 
-.delivered-imgs img:last-child {
+.delivered-imgs img.last-customer {
 	margin-right: 0;
 }
 
@@ -181,7 +181,7 @@
 	justify-content: space-around;
 }
 
-.logos img {
+.logos picture img {
 	height: 3.2rem;
 	/* Trick to make images grey instaed of black */
 	/* filter: grayscale(100%); */
@@ -210,13 +210,14 @@
 }
 
 .step-img-box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
 	position: relative;
 }
 
+.step-img-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .step-img-box:before,
 .step-img-box:after {
 	content: '';
@@ -247,6 +248,9 @@
 }
 
 .step-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 35%;
 }
 
@@ -606,7 +610,7 @@
 			var(--gradient-tint-trans),
 			var(--main-color-trans)
 		),
-		url('../img/eating.avif');
+		url('../img/eating.webp');
 	background-size: cover;
 	background-position: center;
 }
