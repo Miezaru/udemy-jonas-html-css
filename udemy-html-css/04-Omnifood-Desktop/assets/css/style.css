@@ -606,7 +606,7 @@
 			var(--gradient-tint-trans),
 			var(--main-color-trans)
 		),
-		url('../img/eating.jpg');
+		url('../img/eating.avif');
 	background-size: cover;
 	background-position: center;
 }
