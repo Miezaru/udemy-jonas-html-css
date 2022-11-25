@@ -4,4 +4,4 @@
 
 **_Certificate:_** [Certificate](https://i.imgur.com/T1nrK64.jpeg)
 
-**_Final version of Omnifood project:_** [Netlify-Omnifood](https://omifood-miezaru.netlify.app/)
+**_Final version of Omnifood project:_** [Netlify-Omnifood](https://omnifood-miezaru.netlify.app/)
